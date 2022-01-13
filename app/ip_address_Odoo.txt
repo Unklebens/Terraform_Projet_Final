@@ -1,0 +1,1 @@
+GP2-Server-Odoo [PUBLIC IP : 18.205.155.78, ID : i-001be70a4b7afcc78, AZ : us-east-1b]
