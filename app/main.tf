@@ -24,12 +24,12 @@ resource "local_file" "hostfile_odoo" {
 }
 
 resource "local_file" "hostfile_admin_public" {
-  filename = "../../hostadmin.ini"
+  filename = "../../hostadminpublic.ini"
   content  = "${module.Admin.admin-public}"
 }
 
 resource "local_file" "hostfile_odoo_public" {
-  filename = "../../hostadmin.ini"
+  filename = "../../hostodoopublic.ini"
   content  = "${module.Admin.odoo-public}"
 }
 
