@@ -15,10 +15,10 @@ module "Odoo" {
 
 resource "local_file" "hostfile_admin" {
   filename = "../../hostadmin.ini"
-  content  = "${module.Admin.admin-ip} ansible_user=ubuntu ansible_ssh_common_args='-o StrictHostKeyChecking=no'"
+  content  = "${module.Admin.admin-ip}"
 }
 
 resource "local_file" "hostfile_odoo" {
   filename = "../../hostodoo.ini"
-  content  = "${module.Odoo.odoo-ip} ansible_user=ubuntu ansible_ssh_common_args='-o StrictHostKeyChecking=no'"
+  content  = "${module.Odoo.odoo-ip}"
 }
