@@ -1,6 +1,6 @@
-output "odoo-id" {
+output "odoo-public" {
 	description = "ID Serveur Odoo"
-	value       = aws_instance.Serveur-Odoo.id
+	value       = aws_instance.Serveur-Odoo.public_ip
 }
 
 output "odoo-ip" {

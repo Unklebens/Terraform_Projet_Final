@@ -1,6 +1,6 @@
-output "admin-id" {
+output "admin-public" {
 	description = "ID Serveur Admin"
-	value       = aws_instance.Serveur-Admin.id
+	value       = aws_instance.Serveur-Admin.public_ip
 }
 output "admin-ip" {
 	description = "IP Serveur Admin"

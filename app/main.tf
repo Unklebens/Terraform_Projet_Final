@@ -22,3 +22,16 @@ resource "local_file" "hostfile_odoo" {
   filename = "../../hostodoo.ini"
   content  = "${module.Odoo.odoo-ip}"
 }
+
+resource "local_file" "hostfile_admin_public" {
+  filename = "../../hostadmin.ini"
+  content  = "${module.Admin.admin-public}"
+}
+
+resource "local_file" "hostfile_odoo_public" {
+  filename = "../../hostadmin.ini"
+  content  = "${module.Admin.odoo-public}"
+}
+
+
+
