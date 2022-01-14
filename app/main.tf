@@ -11,3 +11,14 @@ module "Odoo" {
         security_name = "SG-projet-gp2"
         key_name = "gp2-kp-ajc"
 }
+
+
+resource "local_file" "hostfile_admin" {
+  filename = "../../hostadmin.ini"
+  content  = "${module.Admin.admin-ip} ansible_user=ubuntu ansible_ssh_common_args='-o StrictHostKeyChecking=no'"
+}
+
+resource "local_file" "hostfile_odoo" {
+  filename = "../../hostodoo.ini"
+  content  = "${module.Odoo.odoo-ip} ansible_user=ubuntu ansible_ssh_common_args='-o StrictHostKeyChecking=no'"
+}

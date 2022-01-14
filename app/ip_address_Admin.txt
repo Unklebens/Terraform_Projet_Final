@@ -1,1 +1,0 @@
-GP2-Server-Admin [PUBLIC IP : 54.152.77.200, ID : i-051188cdfe8b78b93, AZ : us-east-1b]
